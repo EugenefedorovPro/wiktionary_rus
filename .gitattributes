@@ -1,0 +1,2 @@
+wiktionary_rus/wiki_parsed.pkl filter=lfs diff=lfs merge=lfs -text
+source/kaikki.org-dictionary-Russian_2022_01_01.json filter=lfs diff=lfs merge=lfs -text
