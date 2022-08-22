@@ -218,3 +218,13 @@ returns np array of float32 type representation of an ipa string
 > [6, 34, 26]
 
 returns a list of integers representing ipa string
+
+---------------
+Raw Data
+---------------
+All data for ``wiktionary_rus`` is stored in `source <https://github.com/EugenefedorovPro/rhyme_rus/tree/main/rhyme_rus/data>`_ directory
+
+*kaikki.org-dictionary-Russian_2022_01_01.json* is the original `russian wiktionary <https://kaikki.org/dictionary/Russian/index.html>`_
+
+*kaikki_parsing_to_Class.ipynb* is a Jupyter notebook with code processing raw data to structured *wiktionary_rus*
+
