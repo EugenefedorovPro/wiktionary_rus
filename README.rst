@@ -32,13 +32,17 @@ in any environment without previous uploading of the Dictionary Class, as standa
 `pickle` module demands.
 
 -------------------------
-Special dependencies 
+Dependencies 
 -------------------------
 
 ``wiktionary_rus`` depends on `a special branch <https://github.com/EugenefedorovPro/ipapy_eugene/tree/forpython310>`_ of my fork of 
 `ipapy <https://github.com/pettarin/ipapy>`_ module. On installation
 the branch is cloned from GitHub to the defined virtual environment. 
 ``ipapy`` is a Python module to work with International Phonetic Alphabet (IPA) strings
+
+*requirements.txt* embraces a full-fledged list of all other dependencies, including 
+those demanded for comfortable work in Jupyter within Visual Studio Code.
+
 
 ------------
 Quick start
