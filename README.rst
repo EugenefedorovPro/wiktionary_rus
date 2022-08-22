@@ -182,6 +182,14 @@ produces a list of all 85 unique ipa signs in wiki_instances
 
 produces a dict: key - number starting from 1 to 85, value - ipa object
 
+
+::
+
+    from wiktionary_rus.ipa_processing import IpaProcessing
+    
+    IpaProcessing.get_sign2number()
+
+
 ::
 
 > {front open unrounded vowel: 1,
@@ -226,5 +234,8 @@ All data for ``wiktionary_rus`` is stored in `source <https://github.com/Eugenef
 
 *kaikki.org-dictionary-Russian_2022_01_01.json* is the original `russian wiktionary <https://kaikki.org/dictionary/Russian/index.html>`_
 
-*kaikki_parsing_to_Class.ipynb* is a Jupyter notebook with code processing raw data to structured *wiktionary_rus*
+*kaikki_parsing_to_Class.ipynb* is a Jupyter notebook with code processing raw data to structured *wiktionary_rus*. You can reproduce the whole process of parsing, changing the code where you need
 
+*grammemes_statistics.xlsx* is a file, which *kaikki_parsing_to_Class.ipynb* demands for correct processing of *grammeme* attribute. The latter should be placed in the same directory as the former one
+
+ 
