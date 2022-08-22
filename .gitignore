@@ -1,6 +1,8 @@
 .idea
 .vscode
+.cspell
 cspell.json
+build
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
