@@ -1,2 +1,1 @@
-include wiki_parsed.pkl
-
+include wiktionary_rus/wiki_parsed.pkl
