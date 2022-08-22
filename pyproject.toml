@@ -4,12 +4,12 @@ build-backend = "setuptools.build_meta"
 
 
 [project]
-name = "wictionary_rus"
+name = "wiKtionary_rus"
 version = "0.0.1"
 authors = [
   { name="Eugene Proskulikov", email="eugene.proskulikov@gmail.com" },
 ]
-description = "Russian wiktionary preprocessed for neuronetworks"
+description = "Russian wiktionary preprocessed for neural networks"
 license = { file="LICENSE" }
 requires-python = ">=3.10"
 classifiers = [
@@ -25,4 +25,5 @@ dependencies = {file = ["requirements.txt"]}
 
 [tool.setuptools]
 include-package-data = true
+packages = ["wiktionary_rus"]
 
