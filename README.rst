@@ -1,16 +1,4 @@
-##############################
-wiktionary_rus
-##############################
-
-Python package with Russian wiktionary preprocessed for neural networks
-
-* Version 0.0.1
-* Date: 2022, August, 11
-* Developer: Eugene Proskulikov
-* License: MIT
-* Contact: `LinkedIn <https://www.linkedin.com/in/eugene-proskulikov-168050a4/>`_.
-* Home: https://github.com/EugenefedorovPro/wiktionary_rus
-
+ 
 ``wiktionary_rus`` includes:
 
 *  database *wiki_parsed.pkl* of 422821 items, which goes back to original `russian wiktionary <https://kaikki.org/dictionary/Russian/index.html>`_
