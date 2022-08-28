@@ -1,10 +1,10 @@
-from wiktionary_rus.wiktionary import wiki_instances
+from ipapy import UNICODE_TO_IPA
 from memoization import cached
-from ipapy import UNICODE_TO_IPA 
+from wiktionary_rus.wiktionary import wiki_instances
 
 
 class IpaProcessing:
-  
+
     @classmethod
     @cached
     def get_unique_ipa(cls):
@@ -18,17 +18,19 @@ class IpaProcessing:
         list_unique_unicodes = [str(ip) for ip in list_unique_ipas]
         list_unique_unicodes.sort()
         return list_unique_unicodes
-    
 
     @classmethod
     def get_sign2number(cls):
         list_unique_unicodes = cls.get_unique_ipa()
-        sign2number = dict((UNICODE_TO_IPA[l], i) for i, l in enumerate(list_unique_unicodes, start = 1))
+        sign2number = dict(
+            (UNICODE_TO_IPA[l], i)
+            for i, l in enumerate(list_unique_unicodes, start=1))
         return sign2number
-  
-  
+
     @classmethod
-    def get_number2sign(cls):    
+    def get_number2sign(cls):
         list_unique_unicodes = cls.get_unique_ipa()
-        number2sign = dict((i, UNICODE_TO_IPA[l]) for i, l in enumerate(list_unique_unicodes, start = 1))
+        number2sign = dict(
+            (i, UNICODE_TO_IPA[l])
+            for i, l in enumerate(list_unique_unicodes, start=1))
         return number2sign
