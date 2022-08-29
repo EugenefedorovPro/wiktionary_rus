@@ -1,10 +1,18 @@
 import json
 from ipapy import UNICODE_TO_IPA
-from wiktionary_rus.wiktionary import find_item_from_wiki, wikiout
+from wiktionary_rus.wiktionary import (
+    find_item_from_wiki,
+    find_item_from_wiki_unstressed,
+    wikiout,
+)
 
 
 def test_find_item_from_wiki():
     assert "xərɐˈʂo" == find_item_from_wiki("хорошо'")[0].sounds
+
+
+def test_find_item_from_wiki_unstressed():
+    assert "xərɐˈʂo" == find_item_from_wiki_unstressed("хорошо")[0].sounds
 
 
 def test_wikiout():

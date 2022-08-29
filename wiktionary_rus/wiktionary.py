@@ -52,9 +52,13 @@ equal_ipa_in_wiki_and_ipapy(dict_name_ipa)
 
 def find_item_from_wiki(word_with_accent):
     wiki_instances = upload_wiki_parsed(path_wiki_parsed)
-    list_items = [
-        item for item in wiki_instances if item.accent == word_with_accent
-    ]
+    list_items = [item for item in wiki_instances if item.accent == word_with_accent]
+    return list_items
+
+
+def find_item_from_wiki_unstressed(word_without_accent):
+    wiki_instances = upload_wiki_parsed(path_wiki_parsed)
+    list_items = [item for item in wiki_instances if item.word == word_without_accent]
     return list_items
 
 
