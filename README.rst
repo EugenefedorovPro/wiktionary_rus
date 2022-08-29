@@ -37,7 +37,7 @@ Quick start
 
 ::  
 
-    from wiktionary_rus.wiktionary import wiki_instances, find_item_from_wiki, wikiout
+    from wiktionary_rus.wiktionary import wiki_instances, find_item_from_wiki, find_item_from_wiki_unstressed, wikiout
 
 This import will upload database. 
 To lookup all data available on the word::
@@ -59,10 +59,21 @@ To find all items on the word available in the database::
 
      find_item_from_wiki("клю'ч")
 
-Output will provide a list of objects, which have *word* attribute equal to
-an input, in this case *ключ*::
+Output will provide a list of objects, which have *accent* attribute equal to
+an input, in this case *клю'ч*::
 
 > [<__main__.Dictionary object at 0x000002288EFCFC70>, <__main__.Dictionary object at 0x000002288EFCFD90>]
+
+
+To find all items on the word available in the database, providing input as an unstressed word::
+
+     find_item_from_wiki_unstressed("дома")
+
+Output will provide a list of objects, which have *word* attribute equal to
+an input, in this case *дома*::
+
+> [<__main__.Dictionary object at 0x000001F547084250>, <__main__.Dictionary object at 0x000001F547084340>, <__main__.Dictionary object at 0x000001F547084430>]
+
 
 -------------------
 General attributes
