@@ -27,3 +27,6 @@ dependencies = {file = ["requirements.txt"]}
 include-package-data = true
 packages = ["wiktionary_rus"]
 
+
+
+
