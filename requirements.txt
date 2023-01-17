@@ -1,4 +1,4 @@
-dill>=0.3.5.1
+dill=0.3.5.1
 ipapy @ git+https://github.com/EugenefedorovPro/ipapy_eugene.git@1cb62fa932b0ba0dc530bde5e6469a8e70b2c820
 memoization==0.4.0
 numpy==1.23.1
